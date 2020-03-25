@@ -27,10 +27,10 @@ class QuoteBox extends React.Component {
       <div id="wrapper">
         <div id="quote-box">
           <div className="quote-text">
-            <i className="fa fa-quote-left">`&quot;`</i><span id="text">{quotes.map(item => item.quote)[0]}</span>
+            <i className="fa fa-quote-left">`&quot;`</i><span id="text">{quotes.map(item => item.quote)[randomRes]}</span>
           </div>
           <div className="quote-author">
-          - <span id="author">{quotes.map(item => item.author)[0]}</span>
+          - <span id="author">{quotes.map(item => item.author)[randomRes]}</span>
           </div>
           <div className="buttons">
             <button className="button" id="new-quote">New quote</button>
